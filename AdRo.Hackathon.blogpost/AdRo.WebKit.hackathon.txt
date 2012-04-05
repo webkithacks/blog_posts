@@ -17,13 +17,13 @@ Prima zi a fost mai mult de familiarizare cu codul și procesele din jurul WebKi
 În cele ce urmează, veți găsi o scurtă descriere pentru fiecare din proiectele realizate în timpul hackathonului, împreună cu screenshot-uri, video-uri și, acolo unde este cazul, link-uri la codul produs.
 
 <h4>Resize event pentru orice element HTML</h4>
-<img alt="Resize event demo" src="https://github.com/mibalan/Writings/raw/master/AdRo.Hackathon.blogpost/Resize.event.png" class="aligncenter" width="821" height="525" />
+<a href="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/Resize.event.png" target="_blank"><img style='border: 2px solid black;' alt="" src="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/sm_Resize.event.png" title="Resize event screenshot" class="aligncenter" width="320" height="205" /></a>
 În HTML singurul obiect care aruncă evenimente de tip <em>resize</em> este <code>window</code>. Uneori însă, în layout-uri complexe sau în situații în care conținutul se poate modifica dinamic, codul pentru a detecta schimbări de dimensiune ale elementelor poate fi destul de complicat. <a href="https://github.com/downloads/webkithacks/webkit/add_Resize_Event_To_All_DOM_Nodes.diff">Prototipul</a> realizat de Mihai Maerean, Cătălin Badea și Mihai Bivol adaugă evenimente de tip <em>resize</em> pe orice element DOM din HTML.
 
 [youtube=http://www.youtube.com/watch?v=k-1kq3amVa0]
 
 <h4>Suport pentru CSS Regions în DRT</h4>
-<img alt="" src="https://github.com/mibalan/Writings/raw/master/AdRo.Hackathon.blogpost/DRT_regions.png" class="alignnone" width="837" height="683" />
+<a href="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/DRT_regions.png" target="_blank"><img style='border: 2px solid black;' alt="" src="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/sm_DRT_regions.png" title="CSS Regions in DRT" class="aligncenter" width="320" height="261" /></a>
 <strong>Dump Render Tree</strong> (sau pe scurt DRT) este o componentă din WebKit folosită de frameworkul de testare automată. Folosind DRT, poziția pe ecran și relația elementelor DOM poate fi exportată în format textual sau ca imagini, permițând compararea rezultatelor cu niște valori așteptate, considerate corecte. În cazul CSS regions, pentru elementele care sunt poziționate într-o regiune, această informație nu este expusă de DRT, ceea ce face compararea textuală a rezultatelor imposibilă. <a href="http://cloud.github.com/downloads/webkithacks/webkit/RenderTreeAsText.patch">Patch-ul</a> la care au lucrat Ion Roșca și Cătălin Ușurelu permite folosirea DRT pentru teste de CSS Regions cu rezultat text. De asemenea pentru a putea lucra pe Windows la acest patch, Ion a trebuit să mai rezolve <a href="https://bugs.webkit.org/show_bug.cgi?id=82047">un bug</a>.
 
 [youtube=http://www.youtube.com/watch?v=ErVNZwUZoVY]
@@ -36,7 +36,7 @@ Una din specificațiile referitoare la video în HTML 5 este <a href="http://dev
 [youtube=http://www.youtube.com/watch?v=ZcQUCuHmjt0]
 
 <h4>background-clip și border-radius</h4>
-<img alt="" src="https://github.com/mibalan/Writings/raw/master/AdRo.Hackathon.blogpost/background-clip-box.png" class="alignnone" width="1025" height="892" />
+<a href="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/background-clip-box.png" target="_blank"><img style='border: 2px solid black;' alt="" src="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/sm_background-clip-box.png" title="background-clip and border-radius fix" class="aligncenter" width="320" height="278" /></a>
 În ultima versiune de Safari, proprietatea <code>background-clip</code> nu este aplicată corect în cazul în care un element are mai multe imagini de fundal și elementul are specificat și <code>border-radius</code> &ndash; <em>aka colțuri rotunjite</em>. Vladimir Grecescu a implementat un fix pentru acest <a href="https://bugs.webkit.org/show_bug.cgi?id=23166">bug</a> dar, după cum spunea și el în prezentare, mai sunt încă niște pași de făcut până ce patch-ul va fi acceptat în trunk-ul WebKit.
 
 [youtube=http://www.youtube.com/watch?v=snhNp0ZoNNc]
@@ -47,7 +47,7 @@ Una din specificațiile referitoare la video în HTML 5 este <a href="http://dev
 [youtube=http://www.youtube.com/watch?v=Y32huMwU_C4]
 
 <h4>CSS counter-set</h4>
-<img alt="" src="https://github.com/mibalan/Writings/raw/master/AdRo.Hackathon.blogpost/counter-set.png" class="alignnone" width="974" height="653" />
+<a href="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/counter-set.png" target="_blank"><img style='border: 2px solid black;' alt="" src="https://github.com/webkithacks/blog_posts/raw/master/AdRo.Hackathon.blogpost/sm_counter-set.png" title="CSS counter-set()" class="aligncenter" width="320" height="215" /></a>
 CSS 2.1 permite un oarecare control asupra contoarelor CSS (folosite de exemplu de listele ordonate) prin proprietățile <code>counter-reset</code> și <code>counter-increment</code>. CSS&nbsp;3 adaugă o proprietate nouă &ndash; <code>counter-set</code> &ndash; pentru mai mult control. Cu toate acestea, <code>counter-set</code> nu este încă implementat în WebKit. <a href="https://github.com/webkithacks/webkit/commit/6767e3fd444482d9bc541bc156c90b6d6d324072">Patch-ul</a> lui Andrian Cucu adaugă suport pentru această proprietate.
 
 [youtube=http://www.youtube.com/watch?v=jm5Q1ap28wY]
