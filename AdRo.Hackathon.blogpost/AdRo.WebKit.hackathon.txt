@@ -5,11 +5,11 @@ Cine-ar fi căutat acum 2 săptămâni echipele din Adobe România care lucreaz�
 Ulterior, în vremurile mai recente, WebKit a fost folosit de către echipe din România și din US ca bază pentru prototipuri care au ajuns noi specificații CSS (CSS Regions, CSS Exclusions, CSS Shaders). Cu alte cuvinte exista deja o masă critică de oameni cu experiență de WebKit și dorința de-a învăța și pe alții.
 
 <h3>Ce presupune un hackathon?</h3>
-Un <a href="http://en.wikipedia.org/wiki/Hackathon">hackathon</a> este în principiu un eveniment în cadrul căruia un grup de  programatori (dar nu numai, nu neapărat) se adună pentru a <em>hack-ui</em> pe un produs sau pe o idee. Ce rezultă în urma unui hackathon variază foarte mult, de la simple noi teste în jurul unei funcționalități, până la repararea de bug-uri sau prototiparea unor funcționalități noi.
+Un <a href="http://en.wikipedia.org/wiki/Hackathon">hackathon</a> este în principiu un eveniment în cadrul căruia un grup de  programatori (dar nu numai, nu neapărat) se adună pentru a lucra la un produs sau la o idee. Ce rezultă în urma unui hackathon variază foarte mult, de la simple noi teste în jurul unei funcționalități, până la repararea de bug-uri sau prototiparea unor funcționalități noi.
 
-Deși nu a fost primul hackathon de WebKit la care am participat (unii colegi având deja 2 hackathoane WebKit la activ &ndash; împreună cu echipele din US), a fost totuși primul hackathon de WebKit organizat 100% de echipa din București. În final ne-am strâns ~16 oameni, cam în proporții egale ingineri din Adobe România și studenți din Politehnică. Pentru studenții din Poli, Adobe a pus la dispoziție toată infrastructura (laptopuri, acces la Internet, locație) și utilitățile necesare (suc/ceai/cafea, pizza la prânz și bere după demo-urile de vineri), totul sub atenta organizare a lui Mihnea :) Pe lângă demitizarea procesului de contribuție, unul din scopurile hackathonului a fost și promovarea contribuției la WebKit printre studenții la Poli.
+Acesta a fost primul hackathon de WebKit organizat 100% de echipa din București (deși unii colegi aveau deja 1-2 hackathoane de WebKit la activ, împreună cu echipele din US). În final ne-am strâns ~16 oameni, cam în proporții egale ingineri din Adobe România și studenți din Politehnică. Pentru studenții din Poli, Adobe a pus la dispoziție toată infrastructura (laptopuri, acces la Internet, locație) și utilitățile necesare (suc/ceai/cafea, pizza la prânz și bere după demo-urile de vineri), totul sub atenta organizare a lui Mihnea :) Pe lângă demitizarea procesului de contribuție, unul din scopurile hackathonului a fost și promovarea contribuției la WebKit printre studenții la Poli.
 
-Prima zi a fost mai mult de familiarizare cu codul și procesele din jurul WebKit &ndash; Mihnea și Răzvan au ținut prezentări despre arhitectura și comunitatea WebKit, procesul de submitare de patch-uri, how-to-s sau proiectele la care lucrăm acum &ndash; după care s-au format echipe, în jurul diferitelor idei. „Grosul” dezvoltării s-a făcut în a doua și în prima parte a celei de-a treia zile, iar vineri după-masă echipele și-au prezentat realizările. În ciuda unor probleme în configurațiile software din prima zi și a unor dificultăți tehnice care au încetinit prezentările vineri, totul a mers foarte bine, la final având în număr mare de demo-uri în stare aproape finală. Lucru cu atât mai îmbucurător cu cât doar câțiva dintre participanți aveau experiență de lucru cu WebKit (pentru mine a fost prima dată când am deschis cod de WebKit în XCode :D ).
+Prima zi a fost mai mult de familiarizare cu codul și procesele din jurul WebKit &ndash; Mihnea și Răzvan au ținut prezentări despre arhitectura și comunitatea WebKit, procesul de submitare de patch-uri, how-to-s sau proiectele la care lucrăm acum. Apoi s-au format echipe, în jurul diferitelor idei. În ciuda unor probleme în configurațiile software, la finalul zilei, aproape toți reușiseră măcar să compileze WebKit-ul. „Grosul” dezvoltării s-a făcut în a doua și în prima parte a celei de-a treia zile, iar vineri după-masă echipele și-au prezentat realizările. În ciuda unor dificultăți tehnice care au încetinit prezentările vineri, totul a mers bine, la final având în număr mare de demo-uri în stare aproape finală. Lucru cu atât mai îmbucurător cu cât doar câțiva dintre participanți aveau experiență de lucru cu WebKit (pentru mine a fost prima dată când am deschis cod de WebKit în XCode :D ).
 
 <h3>Demo time!</h3>
 [youtube=http://www.youtube.com/watch?v=cvywEynl2gM]
@@ -31,7 +31,7 @@ Prima zi a fost mai mult de familiarizare cu codul și procesele din jurul WebKi
 <h4>Poziționarea subtitrărilor în &lt;video&gt; (WebVTT)</h4>
 [youtube=http://www.youtube.com/watch?v=tTdleDoXo5o]
 
-Una din specificațiile referitoare la video în HTML 5 este <a href="http://dev.w3.org/html5/webvtt/">WebVTT</a>. WebVTT standardizează modul de tratare și afișare a track-urilor de tip text într-un element &lt;video&gt;, fie că e vorba de subtitrări, <em>close-captions</em> sau orice alt fel de conținut text adăugat peste un element video. Patch-ul lui Victor Cărbune îmbunătățește suportul pentru WebVTT din WebKit, adăugând posibilitatea de-a poziționa corect (și mereu vizibil)  unele din problemele de poziționare a textului, asigurându-se că textul este mereu vizibil pe ecran, indiferent unde este el poziționat. 
+Una din specificațiile referitoare la video în HTML 5 este <a href="http://dev.w3.org/html5/webvtt/">WebVTT</a>. WebVTT standardizează modul de tratare și afișare a track-urilor de tip text într-un element &lt;video&gt;, fie că e vorba de subtitrări, <em>closed-captions</em> sau orice alt fel de conținut text adăugat peste un element video. Patch-ul lui Victor Cărbune îmbunătățește suportul pentru WebVTT din WebKit, asigurând vizibilitatea textului indiferent unde este el poziționat.
 
 [youtube=http://www.youtube.com/watch?v=ZcQUCuHmjt0]
 
@@ -72,7 +72,7 @@ Deși nu apar înregistrați „pe bandă”, au mai participat și:
 <ul>
 	<li>Andrei Poenaru &ndash; care a lucrat la repararea unor <a href="https://bugs.webkit.org/show_bug.cgi?id=80583">teste</a> de audio și video care erau incorecte</li>
 	<li>Radu Apostoleanu &ndash; care a încercat să adauge un eveniment <code>overflow</code> pe obiectele <code>NamedFlow</code> din CSS Regions.</li>
-	<li>Răzvan Căliman &ndash; care a studiat posibilele interacțiuni dintre Shadow DOM și CSS Regions și cum ar putea fi folosite cele două pentru a create un model mai elegant de folosire a regiunilor. Concluziile celor 3 zile de studiu sunt publice, pe <a href="https://github.com/oslego/shadow-dom-regions/blob/master/Lessons-learned.md ">GitHub</a>.</li>
+	<li>Răzvan Căliman &ndash; care a studiat posibilele interacțiuni dintre Shadow DOM și CSS Regions și cum ar putea fi folosite cele două pentru a crea un model mai elegant de folosire a regiunilor. Concluziile celor 3 zile de studiu sunt publice, pe <a href="https://github.com/oslego/shadow-dom-regions/blob/master/Lessons-learned.md ">GitHub</a>.</li>
 	<li>Mihnea Ovidenie și Raul Hudea &ndash; care au ajutat cu sfaturi în orice a însemnat dezvoltare WebKit</li>
 </ul>
 
@@ -81,7 +81,6 @@ Deși nu apar înregistrați „pe bandă”, au mai participat și:
 [youtube=http://www.youtube.com/watch?v=gWdemNILD4k]
 
 <h3>Ce mai zic și alții</h3>
-Și ca să nu credeți că doar ne lăudăm de unii singuri, mai jos sunt câteva impresii la cald de la participanți:
 
 <blockquote>[...] pe mine m-au bucurat in special oamenii care si-au aratat dedicatia, deschiderea spre comunicare si intelegerea catre cei care nu aveau aceeasi experienta in spate.
 
